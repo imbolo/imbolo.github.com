@@ -3,7 +3,7 @@ layout: post
 title: "linux下修改mysql 编码设置"
 description: "linux下修改mysql 编码设置"
 category: "mysql"
-tags: [ linux, mysql, 编码, 设置]
+tags: [linux,mysql,编码,设置]
 ---
 {% include JB/setup %}
 
@@ -33,7 +33,7 @@ tags: [ linux, mysql, 编码, 设置]
 	SET character_set_client = utf8;
 
 而server、database 可以修改/etc/mysql/my.cnf
-在[mysqld]标签下添加
+在\[mysqld\]标签下添加
 
 	character_set_server=utf8
 
