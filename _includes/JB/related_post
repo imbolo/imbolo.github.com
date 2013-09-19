@@ -1,8 +1,8 @@
 <script type="text/javascript" id="wumiiRelatedItems"></script>
 <script type="text/javascript">
     
-	var wumiiSitePrefix = "http://imbolo.github.io/";
-    var wumiiPermaLink = "http://imbolo.github.io"+"{{ page.url }}"; //请用代码生成文章永久的链接
+	var wumiiSitePrefix = "http://imbolo.github.io";
+    var wumiiPermaLink = wumiiSitePrefix+"{{ page.url }}"; //请用代码生成文章永久的链接
     var wumiiTitle = "{{ page.title }}"; //请用代码生成文章标题
     var wumiiTags = "{{ page.category }}"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
     var wumiiCategories = []; //请用代码生成文章分类，分类名放在 JSONArray 中，如: ["分类1", "分类2"]
