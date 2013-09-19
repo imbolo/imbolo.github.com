@@ -1,6 +1,7 @@
 ---
 layout: post
 category : lessons
+title: "Jekyll 入门"
 tagline: "Supporting tagline"
 tags : [介绍, 新手, jekyll, 教程]
 ---
