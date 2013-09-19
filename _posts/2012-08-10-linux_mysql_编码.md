@@ -2,7 +2,7 @@
 layout: post
 title: "linux下修改mysql 编码设置"
 description: "linux下修改mysql 编码设置"
-category: "linux, mysql"
+category: "mysql"
 tags: [ linux, mysql, 编码, 设置]
 ---
 {% include JB/setup %}
