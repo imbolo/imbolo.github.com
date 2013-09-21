@@ -1,7 +1,7 @@
 <script type="text/javascript" id="wumiiRelatedItems"></script>
 <script type="text/javascript">
     
-	var wumiiSitePrefix = "http://imbolo.github.io";
+	var wumiiSitePrefix = "http://imbolo.gitcafe.com";
     var wumiiPermaLink = wumiiSitePrefix+"{{ page.url }}"; //请用代码生成文章永久的链接
     var wumiiTitle = "{{ page.title }}"; //请用代码生成文章标题
     var wumiiTags = "{{ page.category }}"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"

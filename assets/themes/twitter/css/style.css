@@ -1,3 +1,8 @@
+/*@media(min-width:640px) {*/
+	body {
+		padding: 40px;
+	}
+/*}*/
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
