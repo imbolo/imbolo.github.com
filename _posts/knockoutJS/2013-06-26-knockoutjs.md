@@ -15,7 +15,7 @@ tags: [JS]
 
 然后今天在逛stackoverflow的时候发现了解决办法。
 
-原来 **ko.applyBindingsf**方法是可以接受两个参数的，
+原来 **ko.applyBindings**方法是可以接受两个参数的，
 第一个参数就是viewModel了，第二个是作为作用范围root节点的DOM元素。
 
 然后就可以这样写了
