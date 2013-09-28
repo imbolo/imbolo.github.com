@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+   <title>Jekyll Theme</title>
+   <link href="http://pizn.github.io/kunka/atom.xml" rel="self" type="application/atom+xml"/>
+   <link href="http://pizn.github.io/kunka" rel="alternate" type="text/html" />
+   <updated>2013-09-28T10:48:41+08:00</updated>
+   <id>http://pizn.github.io/kunka</id>
+   <author>
+     <name>掌心</name>
+     <email>zhanxin.info@gmail.com</email>
+   </author>
+
+   
+   <entry>
+     <title>个人作品---拼图挑战赛</title>
+     <link href="http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/24/%E4%BD%9C%E5%93%81-%E6%8B%BC%E5%9B%BE%E6%8C%91%E6%88%98%E8%B5%9B.html"/>
+     <updated>2013-09-24T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/24/作品-拼图挑战赛</id>
+     <content type="html">Included file JB/setup not found in _includes directory
+
+&lt;h3&gt;拼图挑战赛&lt;/h3&gt;
+
+&lt;h4&gt;&lt;/h4&gt;
+&lt;p&gt;这是我在课余独立开发的一款Android拼图游戏，自己设计和制作素材，体验到了美工同学的辛苦啊。当然我当时的美工水平跟后来比还是有很大的发展空间哈。&lt;/p&gt;
+	
+&lt;p&gt;该游戏上传到应用市场上后，被很多拼图爱好者所喜欢，在安卓市场中下载量超过7000次，各个市场的下载量总数超过10000次。其中嵌入的广告条也为我个人赚到了人生的第一桶金。我由这次经历学习到了很多Android开发知识，还了解了移动产品的上线流程和不同的盈利方式。&lt;/p&gt;
+
+安卓市场：&lt;a href=&quot;http://apk.hiapk.com/html/2013/01/1127490.html&quot;&gt;http://apk.hiapk.com/html/2013/01/1127490.html&lt;/a&gt; &lt;br/&gt;
+Google Play：&lt;a href=&quot;https://play.google.com/store/apps/details?id=nine.bolo.puzzle&amp;hl=zh_CN&quot;&gt;https://play.google.com/store/apps/details?id=nine.bolo.puzzle&amp;hl=zh_CN&lt;/a&gt;
+
+&lt;div id=&quot;puzzleShots&quot; class=&quot;puzzleShots&quot; style=&quot;margin: 20px auto;height:440px;&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/1.png&quot; width=&quot;240&quot; alt=&quot;1&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/2.png&quot; width=&quot;240&quot; alt=&quot;2&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/3.png&quot; width=&quot;240&quot; alt=&quot;3&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/4.png&quot; width=&quot;240&quot; alt=&quot;4&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/5.png&quot; width=&quot;240&quot; alt=&quot;5&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/puzzle/6.png&quot; width=&quot;240&quot; alt=&quot;6&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.puzzleShots {  
+    width:   260px;  
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.puzzleShots img {  
+    padding: 15px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;  
+  
+    top:  0; 
+    left: 0 
+} 
+&lt;/style&gt;
+&lt;script src=&quot;http://libs.baidu.com/jquery/1.9.0/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/JS/plugin/cycle/jquery.cycle.all.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(function(){
+	$('#puzzleShots').cycle('shuffle');
+})
+&lt;/script&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>个人作品---郑大轻家园</title>
+     <link href="http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/23/%E4%BD%9C%E5%93%81-%E9%83%91%E5%A4%A7%E8%BD%BB%E5%AE%B6%E5%9B%AD.html"/>
+     <updated>2013-09-23T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/23/作品-郑大轻家园</id>
+     <content type="html">Included file JB/setup not found in _includes directory
+
+&lt;h3&gt;郑大轻家园&lt;/h3&gt;
+
+&lt;h4&gt;&lt;/h4&gt;
+	
+&lt;p&gt;该项目是我和室友一起的校园地图应用项目。我主要负责使用AS3/Flex来开发跨平台的移动客户端。还利用Android原生代码开发Air的原生扩展，实现了语音查询，和用TCP/UDP实现聊天和实时位置共享功能（Air3.3版本不支持UDP，需要用Java来编写扩展实现）。&lt;/p&gt;
+
+&lt;p&gt;我们拿这个东东参加一些比赛，为小伙伴们创造了大量的学分= =&lt;/p&gt;
+
+
+&lt;p&gt;服务器没有部署在公网上，比较可惜，只能用优酷展示演示视频了。&lt;/p&gt;
+&lt;p&gt;地址：&lt;a href=&quot;http://www.youku.com/playlist_show/id_20134784.html&quot;&gt;http://www.youku.com/playlist_show/id_20134784.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;div id=&quot;shots&quot; class=&quot;shots&quot; style=&quot;margin: 20px auto; width:550px;height:520px;overflow:visible&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/360全景.jpg&quot; width=&quot;480&quot; height=&quot;320&quot; alt=&quot;360全景&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/地图.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;地图&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/登陆界面.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;登陆界面&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/等值区划图.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;等值区划图&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/多人聊天位置共享.jpg&quot; width=&quot;480&quot;  alt=&quot;多人聊天位置共享&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/附近—照片墙.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;附近—照片墙&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/个人行踪统计专题图.jpg&quot; width=&quot;480&quot; height=&quot;320&quot; alt=&quot;个人行踪统计专题图&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/活动分析.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;活动分析&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/频道群聊.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;频道群聊&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/通讯录.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;通讯录&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/新鲜事.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;新鲜事&quot;&gt;
+	&lt;img src=&quot;/assets/images/posts/zzu_app/语音查询.jpg&quot; width=&quot;320&quot; height=&quot;480&quot; alt=&quot;语音查询&quot;&gt;	
+&lt;/div&gt;
+
+&lt;style&gt;
+.shots {  
+
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.shots img {  
+    padding: 15px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;  
+  	
+    top:  0; 
+    left: 0 
+} 
+&lt;/style&gt;
+&lt;script src=&quot;http://libs.baidu.com/jquery/1.9.0/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/JS/plugin/cycle/jquery.cycle.all.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+$(function(){
+	$('#shots').cycle('shuffle');
+})
+&lt;/script&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>JS数组去重</title>
+     <link href="http://pizn.github.io/kunka/js/2013/09/14/JS%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D.html"/>
+     <updated>2013-09-14T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/js/2013/09/14/JS数组去重</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;h4&gt;遇到个需要数组去重的问题&lt;/h4&gt;
+
+&lt;p&gt;利用Object的本身就像一个map的特点，&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;var arr = [1,2,2,2,6,6,6,2,2,3];
+var o = {};
+//如此循环，数组中相同的值会作为o的相同属性覆盖之前的值，事实上值也没什么变化
+for (var i=0; i&amp;lt;arr.length; i++) {
+    o[arr[i]] = arr[i];
+}
+var resultArr = [];
+//再遍历一遍o的属性，就可以得到去重复之后的数字了
+for (var item in o) {
+    resultArr.push(item);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+   </entry>
+   
+   <entry>
+     <title>JS实现map</title>
+     <link href="http://pizn.github.io/kunka/js/2013/09/14/JS%E5%AE%9E%E7%8E%B0Map.html"/>
+     <updated>2013-09-14T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/js/2013/09/14/JS实现Map</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;h4&gt;JS 的Object对象&lt;/h4&gt;
+
+&lt;p&gt;对JS还是没太熟悉，在java里用惯了Map，希望JS里也能哟一个，于是自己写过一个，用数组实现，现在想起来那个办法好蠢。&lt;/p&gt;
+
+&lt;p&gt;其实JS的Object本身就可以当成一个Map来使用。&lt;/p&gt;
+
+&lt;p&gt;JS的Object对象可以随时对其添加属性，如
+    object.property = xxx;
+然后可以用object.property或者object[property]这两种形式来访问属性的值。这里的属性名就相当于key，该属性的值就是value。&lt;/p&gt;
+
+&lt;h4&gt;然后比较一下点访问和用方括号访问的方法的不同。&lt;/h4&gt;
+
+&lt;p&gt;用方括号访问的话，属性名可以为数字、数字开头的字符串、空格或者其他会导致语法错误的字符，也可以是关键字或者保留字。点访问的方法的话，则不能这样。&lt;/p&gt;
+
+&lt;h4&gt;实现&lt;/h4&gt;
+
+&lt;h5&gt;如下&lt;/h5&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;function Map() {
+    this.m = {};
+}
+Map.prototype.put = function(key, value) {
+    this.m[key] = value;
+}
+Map.prototype.get = function(key) {
+    return this.m[key];
+}
+Map.prototype.remove = function(key) {
+    delete this.m[key];
+}
+Map.prototype.contain = function(key) {
+    return this.m.hasOwnProperty(key);
+}
+Map.prototype.getKeys = function() {
+    var arr = [];
+    for(var o in this.m) {
+        arr.push(o);
+    }
+    return arr;
+}
+Map.prototype.getValues = function() {
+    var arr = [];
+    for(var o in this.m) {
+        arr.push(this.m[o]);    
+    }
+    return arr;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+   </entry>
+   
+   <entry>
+     <title>css属性值的顺序</title>
+     <link href="http://pizn.github.io/kunka/css/2013/09/02/CSS%E7%9A%84%E5%B1%9E%E6%80%A7%E9%A1%BA%E5%BA%8F.html"/>
+     <updated>2013-09-02T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/css/2013/09/02/CSS的属性顺序</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;h2&gt;1:font顺序&lt;/h2&gt;
+
+&lt;p&gt;对font的定义参数必须按照如下的排列顺序。每个参数仅允许有一个值。忽略的将使用其参数对应的独立属性的默认值：&lt;/p&gt;
+
+&lt;p&gt;font : font-style || font-variant || font-weight || font-size || line-height || font-family&lt;/p&gt;
+
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;p { font: italic small-caps 600 12pts/18pts 宋体; }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;自己记时：风变浓大名&lt;/p&gt;
+
+&lt;h2&gt;2:background的顺序&lt;/h2&gt;
+
+&lt;p&gt;这个属性是设置背景相关属性的一种快捷的综合写法， 包括background-color, background-image, background-repeat, backgroundattachment, background-position。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;body {background:#99FF00 url(../images/css_tutorials/background.jpg) no-repeat fixed 40px 100px}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;发现background-color必须放最前面，其他的顺序哪个前哪个后就没关系了&lt;/p&gt;
+
+&lt;h2&gt;3:border顺序&lt;/h2&gt;
+
+&lt;p&gt;它包含border-width, border-style和border-color。例句如下：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.d1 {border:5px solid gray;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;它的顺序没有规则&lt;/p&gt;
+
+&lt;h2&gt;4:margin顺序&lt;/h2&gt;
+
+&lt;p&gt;这个属性是设定边距宽度的一个快捷的综合写法，用这个属性可以同时设定上下左右边距属性。
+你可以为上下左右边距设置相同的宽度。示例入下 ：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.d1 {margin:1cm}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;你也可以分别设置边距，顺序是上，右 ，下，左。示例如下：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;.d1 {margin :1cm 2cm 3cm 4cm}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+   </entry>
+   
+   <entry>
+     <title>css 盒子模型</title>
+     <link href="http://pizn.github.io/kunka/css/2013/08/21/CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.html"/>
+     <updated>2013-08-21T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/css/2013/08/21/CSS盒子模型</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/css_box/normal.jpeg&quot; alt=&quot;Normal&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/css_box/promiscuous.jpeg&quot; alt=&quot;Promiscuous&quot;&gt;&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>kunka 主题归来</title>
+     <link href="http://pizn.github.io/kunka/2013/08/11/kunka-back.html"/>
+     <updated>2013-08-11T12:55:11+08:00</updated>
+     <id>http://pizn.github.io/kunka/2013/08/11/kunka-back</id>
+     <content type="html">&lt;p&gt;很久之前就把视觉稿画好了，周末有时间，把它给写了出来。下面介绍下 Kunka 主题。&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>来一个Table排序吧</title>
+     <link href="http://pizn.github.io/kunka/js/2013/07/03/Table%E6%8E%92%E5%BA%8F.html"/>
+     <updated>2013-07-03T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/js/2013/07/03/Table排序</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;p&gt;遇到一个需要对表格排序的需求，点击标题，按照升序或者降序来重新显示table。&lt;/p&gt;
+
+&lt;p&gt;然后就尝试着做了一个，如下：&lt;/p&gt;
+
+&lt;table id=&quot;tableSortable&quot; border=&quot;1&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Name&lt;/td&gt;
+            &lt;td&gt;Age&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Brown&lt;/td&gt;
+            &lt;td&gt;35&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Dave&lt;/td&gt;
+            &lt;td&gt;22&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Alex&lt;/td&gt;
+            &lt;td&gt;23&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Allen&lt;/td&gt;
+            &lt;td&gt;27&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+&lt;/table&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+td {
+    width: 100px;
+}
+thead td {
+    cursor: pointer;
+}
+thead td:hover {
+    background: grey;
+}
+&lt;/style&gt;
+
+&lt;p&gt;js:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;/**
+* 传入Table，为其绑定点击排序事件
+**/
+function enhanceTable(table) {
+    var theadArr = [];
+    var sortFlat = false;
+    var theadNode = table.tHead.rows[0].cells;
+
+    //先储存到一个array中， 方便后面去排序
+    try {
+        theadArr = theadNode.slice();
+    }
+    catch (ex) {//ie
+        theadArr = [];
+        for (var i=0; i&amp;lt;theadNode.length; i++) {
+            theadArr.push(theadNode[i]);
+        } 
+    }
+
+    //table thead 的点击回调函数
+    function onClickTHead(event) {
+        sortTable(table, theadArr.indexOf(event.target), sortFlat);
+        sortFlat = !sortFlat;
+    }
+    //排序Table函数
+    function sortTable(table, indexOfColumn, isAsc) {
+        var arrTableRows = [];
+        for(var i=0; i&amp;lt;table.tBodies[0].rows.length; i++) {
+            arrTableRows.push( table.tBodies[0].rows[i] );
+        }
+        //简单起见，排序规则就是字符串比较，一般情况够用了
+        arrTableRows.sort( function (a, b) {
+            return isAsc==true? 
+             (a.cells[indexOfColumn].innerHTML &amp;gt; b.cells[indexOfColumn].innerHTML) :
+             (a.cells[indexOfColumn].innerHTML &amp;lt; b.cells[indexOfColumn].innerHTML);
+        });
+        //最小化现场更新
+        var markUp = &amp;quot;&amp;quot;;
+        for(var i=0; i&amp;lt;arrTableRows.length; i++) {
+            markUp += &amp;quot;&amp;lt;tr&amp;gt;&amp;quot;;
+            markUp += arrTableRows[i].innerHTML
+            markUp += &amp;quot;&amp;lt;/tr&amp;gt;&amp;quot;;
+        }
+        table.tBodies[0].innerHTML = markUp;
+
+        return arrTableRows;
+    }
+    table.tHead.addEventListener(&amp;quot;click&amp;quot;, onClickTHead);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script&gt;
+window.onload = function () {
+    console.log(&quot;window on load&quot;);
+    enhanceTable(document.getElementById(&quot;tableSortable&quot;));
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/assets/JS/table_sort.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>knockoutJS 绑定时设定作用范围</title>
+     <link href="http://pizn.github.io/kunka/knockoutjs/2013/06/26/knockoutjs.html"/>
+     <updated>2013-06-26T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/knockoutjs/2013/06/26/knockoutjs</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;h4&gt;从AngularJS中看到可以设定的脚本作用域&lt;/h4&gt;
+
+&lt;p&gt;从AngularJS中看到可以设定的脚本作用域，
+这种功能在有的时候把功能模块化添加的时候用处很大，
+那knockoutJS里能不能呢，从官方文档上一直没有读到相关的地方啊。&lt;/p&gt;
+
+&lt;p&gt;然后今天在逛stackoverflow的时候发现了解决办法。&lt;/p&gt;
+
+&lt;p&gt;原来 &lt;strong&gt;ko.applyBindings&lt;/strong&gt;方法是可以接受两个参数的，
+第一个参数就是viewModel了，第二个是作为作用范围root节点的DOM元素。&lt;/p&gt;
+
+&lt;p&gt;然后就可以这样写了&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;div id=&amp;quot;one&amp;quot;&amp;gt;
+  &amp;lt;input data-bind=&amp;quot;value: name&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div id=&amp;quot;two&amp;quot;&amp;gt;
+  &amp;lt;input data-bind=&amp;quot;value: name&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+  var viewModelA = {
+     name: ko.observable(&amp;quot;Bob&amp;quot;)
+  };
+  var viewModelB = {
+     name: ko.observable(&amp;quot;Ted&amp;quot;)
+  };
+
+  ko.applyBindings(viewModelA, document.getElementById(&amp;quot;one&amp;quot;));
+  ko.applyBindings(viewModelB, document.getElementById(&amp;quot;two&amp;quot;));
+&amp;lt;/script&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;原帖地址 &lt;a href=&quot;http://stackoverflow.com/questions/7342814/knockoutjs-ko-applybindings-to-partial-view?answertab=votes#tab-top&quot;&gt;http://stackoverflow.com/questions/7342814/knockoutjs-ko-applybindings-to-partial-view?answertab=votes#tab-top&lt;/a&gt;&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>【转】Activity启动模式 </title>
+     <link href="http://pizn.github.io/kunka/android/2013/06/20/android%E7%9A%84Activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F.html"/>
+     <updated>2013-06-20T00:00:00+08:00</updated>
+     <id>http://pizn.github.io/kunka/android/2013/06/20/android的Activity启动模式</id>
+     <content type="html">&lt;p&gt;Included file JB/setup not found in _includes directory&lt;/p&gt;
+
+&lt;p&gt;【转自】&lt;a href=&quot;http://www.cnblogs.com/fanchangfa/archive/2012/08/25/2657012.html&quot;&gt;http://www.cnblogs.com/fanchangfa/archive/2012/08/25/2657012.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;standard 模式启动模式&lt;br&gt;
+每次激活Activity时都会创建Activity，并放入任务栈中。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;singleTop&lt;br&gt;
+如果在任务的栈顶正好存在该Activity的实例， 就重用该实例，否者就会创建新的实例并放入栈顶(即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例)。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;singleTask&lt;br&gt;
+如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移除栈。如果栈中不存在该实例，将会创建新的实例放入栈中。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;singleInstance&lt;br&gt;
+在一个新栈中创建该Activity实例，并让多个应用共享改栈中的该Activity实例。一旦改模式的Activity的实例存在于某个栈中，任何应用再激活改Activity时都会重用该栈中的实例，其效果相当于多个应用程序共享一个应用，不管谁激活该Activity都会进入同一个应用中。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+   </entry>
+   
+
+</feed>

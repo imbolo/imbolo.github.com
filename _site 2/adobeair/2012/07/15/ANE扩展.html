@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+         **
+         * Auther:      掌心
+         * Contact:     http://www.zhanxin.info
+         * Create:      2013.08.10
+         * Theme Name:  Kunka
+         * Authorize:   BY-NC-SA
+         **
+        -->
+        <meta charset="utf-8">
+        <title>ANE Java本机扩展 - Jekyll Theme</title>
+        <!-- meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="generator" content="Jekyll" />
+        <meta name="author" content="掌心" />
+        <meta name="description" content="为Air移动程序编写原生扩展（android版）" />
+        <meta name="keywords" content="" />
+        <!-- atom -->
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://pizn.github.io/kunka/atom.xml" />
+        <link rel="shortcut icon" href="http://jekyllrb.com/favicon.png" type="image/x-icon" />
+        <!-- font-awesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://pizn.github.io/kunka/css/syntax.css">
+        <link rel="stylesheet" href="http://pizn.github.io/kunka/css/main.css">
+        
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40169250-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        
+    </head>
+    <body>
+        <div class="head fn-clear">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="http://pizn.github.io/kunka"><i class="icon-anchor"></i></a>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        
+                        
+                        
+                        <li class="nav-item ">
+                            <a href="http://pizn.github.io/kunka/index.html">
+                                首页
+                            </a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item ">
+                            <a href="http://pizn.github.io/kunka/archives.html">
+                                文章归档
+                            </a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item ">
+                            <a href="http://pizn.github.io/kunka/contact.html">
+                                联系我
+                            </a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item ">
+                            <a href="http://pizn.github.io/kunka/links.html">
+                                友情链接
+                            </a>
+                            
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="follow">
+                    
+                    <a href="/atom.xml" target="_blank"><i class="icon-rss"></i></a>
+                    
+                    <a href="http://weibo.com/pizn" target="_blank"><i class="icon-weibo"></i></a>
+                    
+                    <a href="http://renren.com" target="_blank"><i class="icon-renren"></i></a>
+                    
+                    <a href="http://github.com/pizn" target="_blank"><i class="icon-github-alt"></i></a>
+                    
+                    <a href="http://twitter.com/piznlin" target="_blank"><i class="icon-twitter"></i></a>
+                    
+                    <a href="http://google.com" target="_blank"><i class="icon-google-plus"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="contain fn-clear">
+            <div class="container fn-clear">
+                <div class="main">
+                    <div class="article article-post">
+    <h2 class="title">ANE Java本机扩展</h2>
+    <div class="info">
+        <span class="info-title"><i class="icon-calendar"></i> Published: </span>
+        <span class="info-date">15 Jul 2012</span>
+    </div>
+    <p>Included file JB/setup not found in _includes directory</p>
+
+<h3>简介</h3>
+
+<p>就不简介了。。。如果客官看到这篇，肯定是知道ane，并寻求方法的。</p>
+
+<p>这篇主要是暑假折腾这ANE，花了不少时间，记录一下，以后忘了能找回来。</p>
+
+<h3>过程</h3>
+
+<h3>Java部分</h3>
+
+<ul>
+<li><p>1、新建Android项目，过程中取消勾选 create activity</p></li>
+<li><p>2、导入FlashRuntimeExtension.jar包，设置/gen include partterns 为nothing，在Android 中勾选 Is Library.</p></li>
+<li><p>3、src下新建 com.domain.*** 包，新建类Extension实现 FRExtension,,返回值为新建类实现FREContext,然后再向map中添加映射。</p></li>
+<li><p>4、导出jar</p></li>
+</ul>
+
+<h4>Flex部分</h4>
+
+<ul>
+<li><p>1、新建库，新建类继承EventDisptcher,
+var extContxt:ExtensionContext;
+extContext = ExtensionContext.createExtension(arg0, arg1)
+extContext.call(&quot;funName&quot;, args.)</p></li>
+<li><p>2、结构如下，最后生成ANE然后在需要的项目中导入ANE，而不是加入项目，以后修改ANE，使用项目不更改。</p></li>
+</ul>
+
+<p><img src="/assets/images/posts/post_ane_img1.jpeg" /></p>
+
+    <nav class="article-previous fn-clear">
+        
+        
+        <a class="next" href="/mysql/2012/08/10/linux_mysql_%E7%BC%96%E7%A0%81.html" rel="bookmark">linux下修改mysql 编码设置&nbsp;&raquo;</a>
+        
+    </nav>
+    <div class="comment">
+        
+            
+            <div class="ds-thread"></div>
+            
+        
+    </div>
+</div>
+
+                </div>
+                <div class="aside">
+                    <div class="aside-contact">
+                        <h4 class="title">About me</h4>
+                        <div class="det fn-clear">
+                            <div class="det-image">
+                                <img src="http://tp2.sinaimg.cn/1832671293/180/40020872447/1" />
+                            </div>
+                            <div class="det-text">
+                                <p>我是「展新展新」，一个矛盾体的化身，在你的掌心里。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aside-item">
+                        <h4 class="title">Recent Posts</h4>
+                        <ul class="list">
+                            
+                                <li><a href="http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/24/%E4%BD%9C%E5%93%81-%E6%8B%BC%E5%9B%BE%E6%8C%91%E6%88%98%E8%B5%9B.html" title="个人作品---拼图挑战赛" rel="bookmark">个人作品---拼图挑战赛</a></li>
+                            
+                                <li><a href="http://pizn.github.io/kunka/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA/2013/09/23/%E4%BD%9C%E5%93%81-%E9%83%91%E5%A4%A7%E8%BD%BB%E5%AE%B6%E5%9B%AD.html" title="个人作品---郑大轻家园" rel="bookmark">个人作品---郑大轻家园</a></li>
+                            
+                                <li><a href="http://pizn.github.io/kunka/js/2013/09/14/JS%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D.html" title="JS数组去重" rel="bookmark">JS数组去重</a></li>
+                            
+                                <li><a href="http://pizn.github.io/kunka/js/2013/09/14/JS%E5%AE%9E%E7%8E%B0Map.html" title="JS实现map" rel="bookmark">JS实现map</a></li>
+                            
+                                <li><a href="http://pizn.github.io/kunka/css/2013/09/02/CSS%E7%9A%84%E5%B1%9E%E6%80%A7%E9%A1%BA%E5%BA%8F.html" title="css属性值的顺序" rel="bookmark">css属性值的顺序</a></li>
+                            
+                                <li><a href="http://pizn.github.io/kunka/css/2013/08/21/CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.html" title="css 盒子模型" rel="bookmark">css 盒子模型</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="aside-item">
+                        <h4 class="title">Links</h4>
+                        <ul class="list">
+                            
+                                
+                                    
+                                    <li><a href="http://www.zhanxin.info" title="掌心" target="_blank">掌心</a></li>
+                                    
+                                    <li><a href="http://jekyllrb.com" title="Jekyll" target="_blank">Jekyll</a></li>
+                                    
+                                    <li><a href="http://www.zhanxin.info/themes.html" title="Jekyll Theme" target="_blank">Jekyll Theme</a></li>
+                                    
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="footer">
+                <p>Copyright 2013. All rights reserved. Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin.info</a>.</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+            
+                
+                <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"zhanxin"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = 'http://static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                        || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                
+            
+        
+    </body>
+</html>
