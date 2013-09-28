@@ -5,7 +5,7 @@ description: "android中Activity启动模式有四种"
 category: "android"
 tags: [android]
 ---
-{% include JB/setup %}
+
 
 
 【转自】[http://www.cnblogs.com/fanchangfa/archive/2012/08/25/2657012.html](http://www.cnblogs.com/fanchangfa/archive/2012/08/25/2657012.html)

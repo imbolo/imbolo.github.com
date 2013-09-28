@@ -5,7 +5,7 @@ description: "knockoutJS 绑定时设定作用范围"
 category: knockoutJS
 tags: [JS]
 ---
-{% include JB/setup %}
+
 
 ####从AngularJS中看到可以设定的脚本作用域
 

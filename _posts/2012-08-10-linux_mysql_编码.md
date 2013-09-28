@@ -5,7 +5,7 @@ description: "linux下修改mysql 编码设置"
 category: "mysql"
 tags: [linux,mysql,编码,设置]
 ---
-{% include JB/setup %}
+
 
 #####在linux下使用mysql，默认安装的话，编码是latin1，在开发的时候会遇到中文乱码的情况。
 
