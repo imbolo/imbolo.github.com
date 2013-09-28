@@ -8,6 +8,7 @@ safe:  false
 title: 菠萝先森的博客
 description: 菠萝先森的博客
 keywords: 菠萝先森
+url: http://imbolo.github.io
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
 
