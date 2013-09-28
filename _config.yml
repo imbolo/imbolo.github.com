@@ -51,8 +51,7 @@ customLinks:
     - text: 印象童年
       url: http://www.kidshow.com.cn
     - text: 掌心
-      url: http://www.zhanxin.info
-   
+      url: http://www.zhanxin.info 
     message: Friends
   - item:
     - text: Font Awesome
