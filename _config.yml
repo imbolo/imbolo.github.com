@@ -29,7 +29,7 @@ author:
     email: jim0203@gmail.com
     imageLink: http://tp2.sinaimg.cn/2398850605/180/5637464885/1
     simpleIntro: <h4>菠萝先森</h4><p>一直热爱前端开发的菠萝</p>
-    detailIntro: 擅长前端开发，对JS模块化开发很有兴趣。对hybrid app和air等跨平台移动开发非常熟悉，有上线单页面应用经验。<br/>熟悉Android开发，有在Google Play、安卓市场等上线的独立小游戏作品。<br/>会做UI切图，能和美工轻松合作。<br/>Shell爱好者，Mac OSX/Linux重度用户。
+    detailIntro: 
 	
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
@@ -37,14 +37,11 @@ follow:
     url: /atom.xml
   - class: icon-weibo
     url: http://weibo.com/imbolo
-  # - class: icon-renren
-#     url: http://renren.com
+
   - class: icon-github-alt
     url: https://github.com/imbolo
   - class: icon-twitter
     url: http://twitter.com/mrbolo
-  # - class: icon-google-plus
- #    url: http://google.com
 
 #Links
 customLinks:
@@ -56,14 +53,14 @@ customLinks:
     - text: Jekyll Theme
       url: http://www.zhanxin.info/themes.html
     message: Friends
-  # - item:
- #    - text: Font Awesome
- #      url: http://fortawesome.github.io/Font-Awesome/
- #    - text: Google Font
- #      url: http://www.google.com/fonts/
- #    - text: jQuery
- #      url: http://jquery.com/
- #    message: 其他相关链接
+  - item:
+    - text: Font Awesome
+      url: http://fortawesome.github.io/Font-Awesome/
+    - text: Google Font
+      url: http://www.google.com/fonts/
+    - text: jQuery
+      url: http://jquery.com/
+    message: 其他相关链接
 
 #googleAnaly, your id link UA-12345678-X
 googleAnaly:
