@@ -16,6 +16,8 @@ favicon: http://tp2.sinaimg.cn/2398850605/180/5637464885/1
 nav:
   - text: 首页
     url: /index.html
+  - text: 分类目录
+    url: /categories.html
   - text: 文章归档
     url: /archives.html
   - text: 联系我
