@@ -5,8 +5,8 @@ paginate: 8
 safe:  false
 
 #Site config
-title: 菠萝先森的博客
-description: 菠萝先森的博客
+title: 刘洋的博客
+description: 刘洋的博客
 keywords: 前端
 url: http://imbolo.github.io
 feed: /atom.xml
