@@ -48,6 +48,8 @@ follow:
 #Links
 customLinks:
   - item:
+    - text: 印象幼儿园/印象童年
+  	  url: http://www.kidshow.com.cn/
     - text: 掌心
       url: http://www.zhanxin.info
     - text: Jekyll
