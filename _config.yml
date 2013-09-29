@@ -24,6 +24,8 @@ nav:
     url: /contact.html
   - text: 友情链接
     url: /links.html
+  - text: 求收留
+    url: /resume/index.html
 
 #Author config
 author:
