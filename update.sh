@@ -1,3 +1,3 @@
 git add .
 git commit -m "auto update"
-git push origin gitcafe-pages
+git push origin master
