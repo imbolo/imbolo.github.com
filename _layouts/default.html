@@ -18,8 +18,19 @@
         <link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-        <script src="/assets/JS/job.js" type="text/javascript" charset="utf-8"></script>
-       
+		<script src="/assets/JS/job.js" type="text/javascript" charset="utf-8"></script>
+        {% if site.googleAnaly.config %}
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', '{{ site.googleAnaly.id }}', '{{ site.googleAnaly.siteurl }}');
+		  ga('send', 'pageview');
+
+		</script>
+        {% endif %}
     </head>
     <body>
         <div class="head fn-clear">
@@ -98,7 +109,7 @@
         <div class="foot">
             <div class="footer">
 
-                <p>© 2013 菠萝先森 with help from <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin.info</a>. <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000088187'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000088187%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></p>
+                <p>© {{ site.time | date: '%Y' }} {{site.author.name}} with help from <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin.info</a>.<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000088168'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000088168%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></p>
             </div>
         </div>
        
