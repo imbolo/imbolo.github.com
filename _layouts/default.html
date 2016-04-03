@@ -2,7 +2,7 @@
 <html>
     <head>
 		<script type="text/javascript">
-		window.location = "http://blog.liuyang.eu"
+		// window.location = "http://blog.liuyang.eu"
 		</script>
         <meta charset="utf-8">
         <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 		<script src="/assets/JS/job.js" type="text/javascript" charset="utf-8"></script>
-      
+
     </head>
     <body>
         <div class="head fn-clear">
@@ -103,7 +103,7 @@
                 <p>© {{ site.time | date: '%Y' }} {{site.author.name}} with help from <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin.info</a>. <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000088187'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000088187%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></p>
             </div>
         </div>
-       
+
 
         {% if page.comment %}
             {% if site.disqus.config %}
