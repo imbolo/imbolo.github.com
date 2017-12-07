@@ -2,7 +2,7 @@
 <html data-framework="vue">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Todo • Vue.js</title>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/todomvc-app-css/index.css">
     <style>
@@ -34,7 +34,7 @@
     <section class="todoapp">
       <h1>Todo</h1>
       <form action="#" id="login" v-on:submit.prevent="login" v-if="!user" v-cloak>
-        <input v-model="username" autofocus required class="new-todo" placeholder="Username">
+        <input v-model="username" :autofocus="!isIos" required class="new-todo" placeholder="Username">
         <input type="password" v-model="password" required class="new-todo" placeholder="Password">
         <div class="control">
           <input type="submit" value="Login" class="new-todo" id="login-button">
@@ -43,14 +43,16 @@
       </form>
       <template v-if="user" v-cloak>
         <header class="header">
-          <input class="new-todo"
+          <form action="#">
+          <input class="new-todo needsclick"
             v-if="user"
-            autofocus autocomplete="off"
+            :autofocus="!isIos" autocomplete="off"
             placeholder="What needs to be done?"
             v-model="newTodo"
             @keyup.enter="addTodo">
+          </form>
         </header>
-        <section class="main" v-show="todos.length">
+        <section id="main" class="main" v-show="todos.length">
           <input class="toggle-all" type="checkbox" v-model="allDone">
           <ul class="todo-list">
             <li v-for="todo in filteredTodos"
