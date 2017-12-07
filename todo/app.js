@@ -2,6 +2,8 @@ Parse.serverURL = 'http://api.mrcoder.org:1337/parse'
 Parse.initialize('Nd123dadc', 'JSx1dfcasdf')
 var Todo = Parse.Object.extend('Todo')
 
+FastClick.attach(document.body)
+var isIos = /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)
 // visibility filters
 var filters = {
   all: function (todos) {
@@ -41,7 +43,8 @@ var bind = function(subscription, initialStats, onChange) {
   subscription.on('leave', remove)
   subscription.on('delete', remove)
   return function() {
-    subscription.unsubscribe()
+    // subscription.unsubscribe()
+    Parse.LiveQuery.close()
   }
 }
 
@@ -58,6 +61,7 @@ var app = new Vue({
   data: {
     todos: [],
     newTodo: '',
+    isIos: isIos,
     editedTodo: null,
     visibility: 'all',
     username: username || '',
@@ -219,7 +223,8 @@ var app = new Vue({
       })).then(function() {
         this.todos = filters.active(this.todos)
       }.bind(this)).catch(alert)
-    }
+    },
+    noop: function() {}
   },
 
   // a custom directive to wait for the DOM to be updated
