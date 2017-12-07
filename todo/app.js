@@ -19,16 +19,20 @@ var filters = {
   }
 }
 
-var bind = (subscription, initialStats, onChange) => {
-  let stats = [...initialStats]
-  const remove = value => {
-    stats = stats.filter(target => target.id !== value.id)
+var bind = function(subscription, initialStats, onChange) {
+  var stats = [].concat(initialStats)
+  const remove = function(value) {
+    stats = stats.filter(function(target) {
+      return target.id !== value.id
+    })
     return onChange(stats)
   }
-  const upsert = value => {
-    let existed = false
-    stats = stats.map(target => (target.id === value.id ? ((existed = true), value) : target))
-    if (!existed) stats = [value, ...stats]
+  const upsert = function (value) {
+    var existed = false
+    stats = stats.map(function(target) {
+      return target.id === value.id ? ((existed = true), value) : target
+    })
+    if (!existed) stats = [value].concat(stats)
     return onChange(stats)
   }
   subscription.on('create', upsert)
@@ -36,19 +40,18 @@ var bind = (subscription, initialStats, onChange) => {
   subscription.on('enter', upsert)
   subscription.on('leave', remove)
   subscription.on('delete', remove)
-  return () => {
+  return function() {
     subscription.unsubscribe()
-    // subscription.unsubscribe('create', upsert)
-    // subscription.unsubscribe('update', upsert)
-    // subscription.unsubscribe('enter', upsert)
-    // subscription.unsubscribe('leave', remove)
-    // subscription.unsubscribe('delete', remove)
   }
 }
 
 var defaultLoginInfos = location.search.match(/\?username=(.*)&password=(.*)/)
-var username = decodeURIComponent(defaultLoginInfos[1])
-var password = decodeURIComponent(defaultLoginInfos[2])
+var username
+var password
+if (defaultLoginInfos) {
+  username = defaultLoginInfos[1] ? decodeURIComponent(defaultLoginInfos[1]) : null
+  password = defaultLoginInfos[2] ? decodeURIComponent(defaultLoginInfos[2]) : null
+}
 // app Vue instance
 var app = new Vue({
   // app initial state
