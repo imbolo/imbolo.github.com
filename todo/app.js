@@ -37,14 +37,18 @@ var bind = (subscription, initialStats, onChange) => {
   subscription.on('leave', remove)
   subscription.on('delete', remove)
   return () => {
-    subscription.off('create', upsert)
-    subscription.off('update', upsert)
-    subscription.off('enter', upsert)
-    subscription.off('leave', remove)
-    subscription.off('delete', remove)
+    subscription.unsubscribe()
+    // subscription.unsubscribe('create', upsert)
+    // subscription.unsubscribe('update', upsert)
+    // subscription.unsubscribe('enter', upsert)
+    // subscription.unsubscribe('leave', remove)
+    // subscription.unsubscribe('delete', remove)
   }
 }
 
+var defaultLoginInfos = location.search.match(/\?username=(.*)&password=(.*)/)
+var username = decodeURIComponent(defaultLoginInfos[1])
+var password = decodeURIComponent(defaultLoginInfos[2])
 // app Vue instance
 var app = new Vue({
   // app initial state
@@ -53,8 +57,8 @@ var app = new Vue({
     newTodo: '',
     editedTodo: null,
     visibility: 'all',
-    username: '',
-    password: '',
+    username: username || '',
+    password: password || '',
     user: null
   },
 
@@ -170,7 +174,7 @@ var app = new Vue({
         done: false,
         user: Parse.User.current()
       }).setACL(acl).save().then(function(todo) {
-        
+
       }.bind(this)).catch(alert)
       this.newTodo = ''
     },
@@ -179,7 +183,7 @@ var app = new Vue({
       Todo.createWithoutData(todo.objectId)
         .destroy()
         .then(function() {
-          
+
         }.bind(this))
         .catch(alert)
     },
