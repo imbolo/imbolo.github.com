@@ -43,13 +43,13 @@
       </form>
       <template v-if="user" v-cloak>
         <header class="header">
-          <form action="#">
-          <input class="new-todo needsclick"
-            v-if="user"
-            :autofocus="!isIos" autocomplete="off"
-            placeholder="What needs to be done?"
-            v-model="newTodo"
-            @keyup.enter="addTodo">
+          <form action="#" v-on:submit.prevent="noop">
+            <input class="new-todo needsclick"
+              v-if="user"
+              :autofocus="!isIos" autocomplete="off"
+              placeholder="What needs to be done?"
+              v-model="newTodo"
+              @keyup.enter="addTodo">
           </form>
         </header>
         <section id="main" class="main" v-show="todos.length">
